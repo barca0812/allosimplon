@@ -16,19 +16,19 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-md-6">
-        <ul class="list-inline mb-0">
-          <li class="list-inline-item"><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        <ul class="list-inline mb-0 text-center white-icons" style="padding-left: 0;">
+          <li class="list-inline-item" style="margin-right: 15px;"><a href="#"><i class="fa-brands fa-facebook" style="color:#FDFEFE"></i></a></li>
+          <li class="list-inline-item" style="margin-right: 15px;"><a href="#"><i class="fa-brands fa-twitter" style="color:#FDFEFE"></i></a></li>
+          <li class="list-inline-item" style="margin-right: 15px;"><a href="#"><i class="fa-brands fa-instagram" style="color:#FDFEFE"></i></a></li>
+          <li class="list-inline-item" style="margin-right: 15px;"><a href="#"><i class="fa-brands fa-youtube" style="color:#FDFEFE"></i></a></li>
         </ul>
       </div>
-      <div class="col-12 col-md-6 text-md-right">
-        <a href="#">Mentions légales</a>
+      <div class="col-12 col-md-6 text-md-right color #FDFEFE">
+        <a href="mentionslegales.php" style="text-decoration: none; color: white;" >Mentions légales</a>
         <span class="mx-2">|</span>
-        <a href="#">Confidentialité</a>
+        <a href="confidentialité.php" style="text-decoration: none; color: white;" >Confidentialité</a>
         <span class="mx-2">|</span>
-        <a href="#">Nous contacter</a>
+        <a href="nouscontacter.php" style="text-decoration: none; color: white;" >Nous contacter</a>
        
       </div>
     </div>

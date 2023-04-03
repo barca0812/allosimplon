@@ -21,36 +21,70 @@
       <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav me-auto">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Accueil
+            <a class="nav-link active" href="index.php">Accueil
               <span class="visually-hidden">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Films</a>
+            <a class="nav-link" href="allfilm.php">Films</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Nouveautés</a>
+            <a class="nav-link" href="nouveautés">Nouveautés</a>
           </li>
 
-          
+
         </ul>
         <form class="d-flex">
           <input class="form-control me-sm-2" type="recherche" placeholder="Recherche">
           <button class="btn btn-secondary my-2 my-sm-0" type="submit">Recherche</button>
         </form>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Mon compte</a>
-          </li>
+
       </div>
     </div>
+    <!--  -->
+
+        <?php
+
+         // echo $_SESSION['pseudo'];
+         if(isset($_SESSION['pseudo'])) {echo '<div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="inscription.php">'.$_SESSION['pseudo'].'
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarColor02">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="connexion.php">deconnexion
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+        </div>';}
+         else{
+
+          echo '<div class="collapse navbar-collapse" id="navbarColor02">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="inscription.php">inscription
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+    </div>
     <div class="collapse navbar-collapse" id="navbarColor02">
-        <ul class="navbar-nav me-auto">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Mon compte
-              <span class="visually-hidden">(current)</span>
-            </a>
-          </li>
-    
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="connexion.php">connexion
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+    </div>';
+
+         }
+         ?>
+ 
+
   </nav>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
